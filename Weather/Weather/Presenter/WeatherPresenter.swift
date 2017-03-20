@@ -25,7 +25,7 @@ typealias FetchWeatherInfoCompletionHandler = (FetchWeatherInfoResult) -> Void
 
 class WeatherPresenter {
     
-    private var locationService: LocationServiceProtocol
+    fileprivate var locationService: LocationServiceProtocol
     fileprivate var weatherService: WeatherServiceProtocol
     fileprivate var completionHandler: FetchWeatherInfoCompletionHandler?
     fileprivate var currentLocation: CLLocation?
@@ -35,6 +35,10 @@ class WeatherPresenter {
         self.weatherService = weatherService
     }
     
+    /**
+     This method is used to fetch the 5 day forecast for the current device location
+     - Parameter completionHandler: completion handler to notify the 5 day forecast  information to display
+     */
     func fetchWeatherInfo(completionHandler: @escaping FetchWeatherInfoCompletionHandler) {
         self.completionHandler = completionHandler
         guard let currentLocation = currentLocation else {
@@ -44,8 +48,13 @@ class WeatherPresenter {
         
         fetchWeatherInfo(for: currentLocation)
     }
+}
+
+
+// MARK: private methods
+extension  WeatherPresenter {
     
-    private func findCurrentLocation() {
+    func findCurrentLocation() {
         locationService.requestLocation(completionHandler: {[weak self] (result) in
             guard let strongSelf = self else {
                 return
@@ -58,15 +67,15 @@ class WeatherPresenter {
                 strongSelf.completionHandler?(FetchWeatherInfoResult.Failed(FetchWeatherInfoError.locationError))
             }
         })
-
+        
     }
     
-    fileprivate func fetchWeatherInfo(for currentLocation: CLLocation) {
+    func fetchWeatherInfo(for currentLocation: CLLocation) {
         weatherService.downloadWeatherInfo(for: currentLocation) { [weak self] result in
             guard let strongSelf = self else {
                 return
             }
-
+            
             DispatchQueue.main.async {
                 switch(result) {
                 case .Success(let weather):
@@ -74,9 +83,9 @@ class WeatherPresenter {
                 case .Failure(let error):
                     var errorDescripton:String = String()
                     switch error {
-                        case .urlError: errorDescripton = FetchWeatherInfoError.serverError
-                        case .networkRequestFailed: errorDescripton = FetchWeatherInfoError.networkError
-                        case .jsonSerializationFailed, .jsonParsingFailed: errorDescripton = FetchWeatherInfoError.dataError
+                    case .urlError: errorDescripton = FetchWeatherInfoError.serverError
+                    case .networkRequestFailed: errorDescripton = FetchWeatherInfoError.networkError
+                    case .jsonSerializationFailed, .jsonParsingFailed: errorDescripton = FetchWeatherInfoError.dataError
                     }
                     strongSelf.completionHandler?(FetchWeatherInfoResult.Failed(errorDescripton))
                 }

@@ -1,5 +1,5 @@
 //
-//  WeatherViewContentPanelFactory.swift
+//  AppConfiguration.swift
 //  Weather
 //
 //  Created by Appaji Tholeti on 20/03/2017.
@@ -10,7 +10,10 @@ import Foundation
 import UIKit
 
 struct AppConfiguration {
-    
+    /**
+     This method configures the required components ans injects usng dependenct injection
+     - Parameter window: window object of the application.
+     */
     static func configure(window: UIWindow?) {
         let navigationController = window?.rootViewController as? UINavigationController
         guard let weatherViewController = navigationController?.topViewController as? WeatherViewController else {

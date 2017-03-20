@@ -18,5 +18,9 @@ enum LocationServiceResult {
 typealias LocationServiceCompletionHandler = (LocationServiceResult) -> Void
 
 protocol LocationServiceProtocol {
+    /**
+     This method is used to find the current location of the device
+     - Parameter completionHandler: completion handler to notify about the status of the current location
+     */
     func requestLocation(completionHandler: @escaping LocationServiceCompletionHandler)
 }

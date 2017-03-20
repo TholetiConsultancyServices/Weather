@@ -10,11 +10,11 @@ import Foundation
 import ObjectMapper
 
 struct Forecast: Mappable {
-    var date:Date?
-    var temperature: Double?
-    var weatherConditionId: Int?
-    var weatherConditionIcon: String?
-    var weatherDescription: String?
+    private(set) var date:Date?
+    private(set) var temperature: Double?
+    private(set) var weatherConditionId: Int?
+    private(set) var weatherConditionIcon: String?
+    private(set) var weatherDescription: String?
     
     init?(map: Map) { }
     
@@ -27,10 +27,9 @@ struct Forecast: Mappable {
     }
 }
 
-
 struct Weather: Mappable {
-    var cityName: String?
-    var forecasts: [Forecast]?
+    private(set) var cityName: String?
+    private(set) var forecasts: [Forecast]?
     
     init?(map: Map) { }
     

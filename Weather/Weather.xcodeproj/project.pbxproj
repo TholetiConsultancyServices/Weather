@@ -17,7 +17,7 @@
 		CB82EC301E80723B002663F8 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82EC2E1E80723B002663F8 /* AppConfiguration.swift */; };
 		CB82EC311E80723B002663F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82EC2F1E80723B002663F8 /* AppDelegate.swift */; };
 		CB82EC461E807246002663F8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82EC331E807246002663F8 /* Weather.swift */; };
-		CB82EC471E807246002663F8 /* weatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82EC341E807246002663F8 /* weatherIcon.swift */; };
+		CB82EC471E807246002663F8 /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82EC341E807246002663F8 /* WeatherIcon.swift */; };
 		CB82EC481E807246002663F8 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82EC351E807246002663F8 /* WeatherViewModel.swift */; };
 		CB82EC491E807246002663F8 /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82EC371E807246002663F8 /* WeatherPresenter.swift */; };
 		CB82EC4A1E807246002663F8 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82EC3A1E807246002663F8 /* LocationService.swift */; };
@@ -60,7 +60,7 @@
 		CB82EC2E1E80723B002663F8 /* AppConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		CB82EC2F1E80723B002663F8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB82EC331E807246002663F8 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
-		CB82EC341E807246002663F8 /* weatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherIcon.swift; sourceTree = "<group>"; };
+		CB82EC341E807246002663F8 /* WeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
 		CB82EC351E807246002663F8 /* WeatherViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		CB82EC371E807246002663F8 /* WeatherPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherPresenter.swift; sourceTree = "<group>"; };
 		CB82EC3A1E807246002663F8 /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				CB82EC331E807246002663F8 /* Weather.swift */,
-				CB82EC341E807246002663F8 /* weatherIcon.swift */,
+				CB82EC341E807246002663F8 /* WeatherIcon.swift */,
 				CB82EC351E807246002663F8 /* WeatherViewModel.swift */,
 			);
 			path = Model;
@@ -484,7 +484,7 @@
 				CB82EC491E807246002663F8 /* WeatherPresenter.swift in Sources */,
 				CB82EC311E80723B002663F8 /* AppDelegate.swift in Sources */,
 				CB82EC4B1E807246002663F8 /* LocationServiceProtocol.swift in Sources */,
-				CB82EC471E807246002663F8 /* weatherIcon.swift in Sources */,
+				CB82EC471E807246002663F8 /* WeatherIcon.swift in Sources */,
 				CB82EC461E807246002663F8 /* Weather.swift in Sources */,
 				CB82EC4D1E807246002663F8 /* WeatherServiceProtocol.swift in Sources */,
 				CB82EC301E80723B002663F8 /* AppConfiguration.swift in Sources */,

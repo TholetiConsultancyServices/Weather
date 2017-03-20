@@ -8,6 +8,9 @@
 
 import Foundation
 
+/**
+ WeatherIcon is used to map Open Weather Map icon string to Weather Icons unicode string.
+ **/
 struct WeatherIcon {
     let iconText: String
     

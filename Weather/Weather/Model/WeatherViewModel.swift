@@ -9,10 +9,10 @@
 import Foundation
 
 struct ForecastViewModel {
-    private(set) var time: String = String()
-    private(set) var forecastCondition: String = String()
-    private(set) var forecastIcon: String = String()
-    private(set) var temperature: String = String()
+    private(set) var time: String?
+    private(set) var forecastCondition: String?
+    private(set) var forecastIcon: String?
+    private(set) var temperature: String?
     
     private static let formatter: DateFormatter = {
         let dateFormatter = DateFormatter()
@@ -43,13 +43,12 @@ struct WeatherDailyForecast {
     let dayIdentifier: Date
     let forecasts: [ForecastViewModel]
     let day: String
-
 }
 
 struct WeatherViewModel {
     
-    var title: String = String()
-    var dailyForecasts:[WeatherDailyForecast] = []
+    private(set) var title: String?
+    private(set) var dailyForecasts:[WeatherDailyForecast] = []
     
     init(model: Weather) {
         if let cityName = model.cityName {

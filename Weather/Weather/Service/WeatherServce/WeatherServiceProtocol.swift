@@ -24,6 +24,10 @@ enum DownloadWeatherResult {
 typealias WeatherCompletionHandler = (DownloadWeatherResult) -> Void
 
 protocol WeatherServiceProtocol {
+    /**
+     This method is used to download the 5 day forecast for the given location
+     - Parameter completionHandler: completion handler to notify the 5 day forecast information
+     */
     func downloadWeatherInfo(for location: CLLocation,
                              completionHandler: @escaping WeatherCompletionHandler)
 }
