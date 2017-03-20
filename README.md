@@ -7,27 +7,27 @@ The project can be run using Xcode 8.2 and built/tested using the standard Xcode
 
 ## Summary of implementation details:
 
-Developed the App using Xcode 8.2 and Swift 3.0-
+- Developed the App using Xcode 8.2 and Swift 3.0-
 
-Main focus on implementing right architecture, design patterns and performance of the App.
+- Main focus on implementing right architecture, design patterns and performance of the App.
 
-Implemented UI modules using storyboards and auto layouts.
+- Implemented UI modules using storyboards and auto layouts.
 
-Followed VIPER based architecture and MVC design patterns.
+- Followed VIPER based architecture and MVC design patterns.
 
-Used dependency injection across the App to facilitate the unit testing of the classes.
+- Used dependency injection across the App to facilitate the unit testing of the classes.
 
-Implemented unit tests using XCTestCase and Mock Objects.
+- Implemented unit tests using XCTestCase and Mock Objects.
 
-Used NSURLSession for network operations.
+- Used NSURLSession for network operations.
 
-Used ObjectMapper framework for parsing JSON data.
+- Used ObjectMapper framework for parsing JSON data.
 
-Added refresh Data option
+- Added refresh Data option
 
-Added support to run in both landscape and portrait mode
+- Added support to run in both landscape and portrait mode
 
-Provided API documentation.
+- Provided API documentation.
 
 ## Further Improvements
 
