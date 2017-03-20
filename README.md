@@ -7,7 +7,7 @@ The project can be run using Xcode 8.2 and built/tested using the standard Xcode
 
 ## Summary of implementation details:
 
-- Developed the App using Xcode 8.2 and Swift 3.0-
+- Developed the App using Xcode 8.2 and Swift 3.0.
 
 - Main focus on implementing right architecture, design patterns and performance of the App.
 
