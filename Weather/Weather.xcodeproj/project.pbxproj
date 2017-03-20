@@ -31,7 +31,6 @@
 		CB82EC591E80925B002663F8 /* WeatherServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB82EC571E80925B002663F8 /* WeatherServiceProtocol.swift */; };
 		CBE491931E7D360400261F44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE491921E7D360400261F44 /* Assets.xcassets */; };
 		CBE491A11E7D360500261F44 /* WeatherModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE491A01E7D360500261F44 /* WeatherModelTests.swift */; };
-		CBE491C11E7EE8BD00261F44 /* weathericons-regular-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBE491C01E7EE8BD00261F44 /* weathericons-regular-webfont.ttf */; };
 		E1749447E525C8C8AAB51FEF /* Pods_Weather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B66F2ADDA48171B2D3C456 /* Pods_Weather.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +77,6 @@
 		CBE4919C1E7D360500261F44 /* WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE491A01E7D360500261F44 /* WeatherModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModelTests.swift; sourceTree = "<group>"; };
 		CBE491A21E7D360500261F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBE491C01E7EE8BD00261F44 /* weathericons-regular-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "weathericons-regular-webfont.ttf"; sourceTree = "<group>"; };
 		E39F1260BC05E152BB1F2DCF /* Pods-WeatherTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherTests/Pods-WeatherTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,7 +201,6 @@
 			children = (
 				CBE4918A1E7D360400261F44 /* Weather */,
 				CBE4919F1E7D360500261F44 /* WeatherTests */,
-				CBE491BF1E7EE8BD00261F44 /* font */,
 				CBE491891E7D360400261F44 /* Products */,
 				D2A7337A314FEFF19197DAC9 /* Pods */,
 				7585D62212C5EB2B0B35F582 /* Frameworks */,
@@ -250,15 +247,6 @@
 				CB82EBBB1E7F1C0A002663F8 /* TestUtils.swift */,
 			);
 			path = WeatherTests;
-			sourceTree = "<group>";
-		};
-		CBE491BF1E7EE8BD00261F44 /* font */ = {
-			isa = PBXGroup;
-			children = (
-				CBE491C01E7EE8BD00261F44 /* weathericons-regular-webfont.ttf */,
-			);
-			name = font;
-			path = Weather/font;
 			sourceTree = "<group>";
 		};
 		D2A7337A314FEFF19197DAC9 /* Pods */ = {
@@ -363,7 +351,6 @@
 			files = (
 				CB82EC4E1E807246002663F8 /* LaunchScreen.storyboard in Resources */,
 				CBE491931E7D360400261F44 /* Assets.xcassets in Resources */,
-				CBE491C11E7EE8BD00261F44 /* weathericons-regular-webfont.ttf in Resources */,
 				CB82EC541E807258002663F8 /* weathericons-regular-webfont.ttf in Resources */,
 				CB82EC4F1E807246002663F8 /* Main.storyboard in Resources */,
 			);
