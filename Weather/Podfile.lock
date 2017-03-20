@@ -1,0 +1,15 @@
+PODS:
+  - ObjectMapper (2.2.3)
+  - ReachabilitySwift (3)
+
+DEPENDENCIES:
+  - ObjectMapper
+  - ReachabilitySwift
+
+SPEC CHECKSUMS:
+  ObjectMapper: d3b3de11267f5d971f390eb8d63dd509116a4329
+  ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
+
+PODFILE CHECKSUM: 9c59d8c39d8964f2b463bb034c7cd4c9b42bbfb5
+
+COCOAPODS: 1.1.1
