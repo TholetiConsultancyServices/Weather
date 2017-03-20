@@ -43,7 +43,7 @@ class WeatherPresenterTests: XCTestCase {
             promiseToCallBack.fulfill()
         }
         
-        waitForExpectations(timeout: 10) { error in
+        waitForExpectations(timeout: 2) { error in
             print("timed out: \(error)")
         }
     }
