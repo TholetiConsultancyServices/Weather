@@ -16,7 +16,7 @@ An iPhone app for iOS 10 that displays the 5-day weather forecast for the curren
 
 - Implemented UI modules using storyboards and auto layouts.
 
-- Followed VIPER based architecture and MVC design patterns.
+- Followed MVP based architecture- Model,View(View&ViewController) and Presenter
 
 - Used dependency injection across the App to facilitate the unit testing of the classes.
 
